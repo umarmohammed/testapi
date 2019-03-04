@@ -29,6 +29,7 @@ namespace TestApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.AddCorsAllowAny();
             app.UseMvc();
         }
     }
