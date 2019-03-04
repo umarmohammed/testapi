@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using TestApi.Dto;
-using TestApi.Helper;
+using TestApi.Domain;
+using TestApi.Domain.Domain;
 
 namespace TestApi.Controllers
 {
@@ -14,6 +14,5 @@ namespace TestApi.Controllers
         {
             return DataStore.GetProducts();
         }
-        
     }
 }

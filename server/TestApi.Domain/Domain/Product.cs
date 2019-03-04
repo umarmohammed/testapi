@@ -1,4 +1,4 @@
-﻿namespace TestApi.Dto
+﻿namespace TestApi.Domain.Domain
 {
     public class Product
     {

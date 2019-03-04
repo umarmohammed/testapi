@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using TestApi.Dto;
+using TestApi.Domain.Domain;
 using Xunit;
 
 namespace TestApi.Tests.IntegrationTests

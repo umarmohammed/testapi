@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using TestApi.Dto;
+using TestApi.Domain.Domain;
 
-namespace TestApi.Helper
+namespace TestApi.Domain
 {
     public static class DataStore
     {
