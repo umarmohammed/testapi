@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TestApi.Data\TestApi.Data.csproj" />
     <ProjectReference Include="..\TestApi.Domain\TestApi.Domain.csproj" />
   </ItemGroup>
 

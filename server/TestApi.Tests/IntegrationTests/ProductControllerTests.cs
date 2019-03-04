@@ -9,11 +9,11 @@ using Xunit;
 
 namespace TestApi.Tests.IntegrationTests
 {
-    public class ProductControllerTests : IClassFixture<WebApplicationFactory<Startup>>
+    public class ProductControllerTests : IClassFixture<CustomWebApplicationFactory<Startup>>
     {
         private readonly HttpClient _client;
 
-        public ProductControllerTests(WebApplicationFactory<Startup> factory)
+        public ProductControllerTests(CustomWebApplicationFactory<Startup> factory)
         {
             _client = factory.CreateClient();
         }
