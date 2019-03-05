@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from 'src/app/models/product.model';
 import { ProductService } from 'src/app/services/product.service';
+import { ProductDataSource } from './productDataSource';
 
 @Component({
   selector: 'app-product-list',
@@ -9,11 +10,10 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent implements OnInit {
-  products$: Observable<Product>;
+  dataSource = new ProductDataSource(this.productService);
+  displayedColumns = ['name', 'model', 'serial'];
 
   constructor(private productService: ProductService) {}
 
-  ngOnInit() {
-    this.products$ = this.productService.getProducts();
-  }
+  ngOnInit() {}
 }
